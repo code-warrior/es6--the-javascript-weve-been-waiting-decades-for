@@ -43,7 +43,6 @@
 
        /* Import the renamed function, or */
        import { sayLoudly } from "./js/modules/export-renaming.js";
-       console.log(sayLoudly());
 
        /* Rename the imported function */
        // import { sayLoudly as scream } from "./js/export-renaming.js";
@@ -54,7 +53,7 @@
        console.log(`${dogs.getFirstDogName()} is a ${dogs.getFirstDogBreed()} and is ${dogs.getFirstDogAge()} years old.`);
        console.log(`${dogs.getSecondDogName()} is a ${dogs.getSecondDogBreed()} and is ${dogs.getSecondDogAge()} years old.`);
        console.log(`Both do a lot of 💩`);
-
+       console.log(sayLoudly());
        console.log(`---`);
 
        dogs.setThirdDogName("Bubbles");
