@@ -1,12 +1,13 @@
 let firstDogName = "Aria";
 let secondDogName = "Bela";
-let thirdDogName = "";
 
 let firstDogBreed = "Lhasa apso";
 let secondDogBreed = "Shih tzu";
 
 let firstDogAge = 8.5;
 let secondDogAge = 8.6;
+
+let thirdDogName = "";
 
 export function getFirstDogName() {
     return firstDogName;
@@ -36,6 +37,6 @@ export function setThirdDogName(name) {
     thirdDogName = name;
 }
 
-export function getThirdDogName(name) {
+export function getThirdDogName() {
     return thirdDogName;
 }
