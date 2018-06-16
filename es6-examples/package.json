@@ -1,0 +1,19 @@
+{
+  "name": "es6-examples",
+  "version": "1.0.0",
+  "description": "A Gulp template for refreshing the browser on changes to JS and HTML files.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-warrior/es6--the-javascript-weve-been-waiting-decades-for"
+  },
+  "author": "Roy Vanegas",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
