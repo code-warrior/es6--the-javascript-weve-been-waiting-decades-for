@@ -1,4 +1,4 @@
-// Functions: Rest parameters
+// Functions: Rest parameters convert multiple items into an array
 
 function renderArgumentValues(arbitraryParameter, ...restParameters) {
     console.log(`arbitraryParameter is of type ${typeof arbitraryParameter}.`);
