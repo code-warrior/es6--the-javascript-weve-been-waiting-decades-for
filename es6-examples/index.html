@@ -25,23 +25,22 @@
    <!--<script src="js/08&#45;&#45;array-destructuring&#45;&#45;rest-items.js"></script>-->
    <!--<script src="js/08&#45;&#45;array-destructuring&#45;&#45;destructured-parameters.js"></script>-->
 
-   <!-- Using a host, as opposed to your OS’s file system,
-        include a module as a JS file. -->
+   <!-- Using a host, as opposed to your OS’s file system, include a module as a JS file. -->
    <!--<script type="module" src="js/module.js"></script>-->
 
-   <!-- include a module inline -->
+   <!-- Include a module inline -->
    <script type="module">
-       /* import the function sayMyName from name.js */
-       import {sayMyName} from "./js/name.js";
+       /* Import the function sayMyName from name.js */
+       import {sayMyName} from "./js/modules/name.js";
 
        /* occupation and moonlighting act as const */
-       import {occupation, moonlighting} from "./js/occupation.js";
+       import {occupation, moonlighting} from "./js/modules/occupation.js";
 
        /* Import everything as a namespace import. */
-       import * as dogs from "./js/dogs.js";
+       import * as dogs from "./js/modules/dogs.js";
 
        /* Import the renamed function, or */
-       import { sayLoudly } from "./js/export-renaming.js";
+       import { sayLoudly } from "./js/modules/export-renaming.js";
        console.log(sayLoudly());
 
        /* Rename the imported function */
