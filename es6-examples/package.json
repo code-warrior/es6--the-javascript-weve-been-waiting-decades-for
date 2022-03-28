@@ -13,7 +13,7 @@
   "author": "Roy Vanegas",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2"
   }
 }
