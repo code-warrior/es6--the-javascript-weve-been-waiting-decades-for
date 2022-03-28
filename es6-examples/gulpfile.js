@@ -1,9 +1,8 @@
-/*jslint node: true, single, multivar */
-
-let gulp = require(`gulp`),
+const { watch } = require(`gulp`),
     browserSync = require(`browser-sync`),
-    reload = browserSync.reload,
-    browserPref = `default`;
+    reload = browserSync.reload;
+
+let browserPref = `default`;
 
 /**
  * To use either of the browsers listed below that match an installed browser in your
@@ -17,55 +16,38 @@ let gulp = require(`gulp`),
  *    gulp ie serve
  */
 
-gulp.task(`safari`, function () {
-    'use strict';
-
+async function safari () {
     browserPref = `safari`;
-});
+}
 
-gulp.task(`firefox`, function () {
-    'use strict';
-
+async function firefox () {
     browserPref = `firefox`;
-});
+}
 
-gulp.task(`chrome`, function () {
-    'use strict';
-
+async function chrome () {
     browserPref = `google chrome`;
-});
+}
 
-gulp.task(`opera`, function () {
-    'use strict';
-
+async function opera () {
     browserPref = `opera`;
-});
+}
 
-gulp.task(`edge`, function () {
-    'use strict';
-
+async function edge () {
     browserPref = `microsoft-edge`;
-});
+}
 
-gulp.task(`ie`, function () {
-    'use strict';
-
-    browserPref = `iexplore`;
-});
-
-gulp.task(`serve`, function () {
-    'use strict';
-
+let serve = () => {
     browserSync({
         browser: browserPref,
-        notify: true,
-        port: 9000,
         server: `./`
     });
 
-    gulp.watch(`js/*.js`)
-        .on(`change`, reload);
+    watch([`js/*.js`, `./*.html`]).on(`change`, reload);
+};
 
-    gulp.watch(`./*.html`)
-        .on(`change`, reload);
-});
+exports.safari = safari;
+exports.firefox = firefox;
+exports.chrome = chrome;
+exports.opera = opera;
+exports.edge = edge;
+exports.serve = serve;
