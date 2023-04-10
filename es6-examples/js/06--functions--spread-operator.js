@@ -1,6 +1,7 @@
 // Functions: Spread operator converts an array into separate items
 let naturals = [0, 1, 2, 3];
 
+// Recall that rest parameters converts multiple items into an array
 function addAllTheArguments(...restParameters) {
     let sum = 0;
 
@@ -11,13 +12,18 @@ function addAllTheArguments(...restParameters) {
     return sum;
 }
 
-// Not the same as passing “0, 1, 2, 3”
+/**
+ * Math.min() is invoked with individual numeric parameters, not an array.
+ * For example, console.log(Math.min(0,1,2,3)) returns 0;*
+ */
+
+// Won’t work; not the same as passing “0, 1, 2, 3”
 console.log(Math.min(naturals));
 
 // “Spread” the array into individual items
 console.log(`The minimum of all the arguments is ${Math.min(...naturals)}.`);
 
-// Not the same as passing “0, 1, 2, 3”
+// Again, won’t work; not the same as passing “0, 1, 2, 3”
 console.log(Math.max(naturals));
 
 // “Spread” the array into individual items
