@@ -30,7 +30,7 @@ const trailerParkBoys = {
 
 // The “const” declaration won’t allow the following. A “let” or “var” declaration would allow it, however.
 trailerParkBoys = {
-  'director': 'Mike Clattenburg'
+    'director': `Mike Clattenburg`
 };
 
-console.log('Trailer Park Boys is directed by ' + trailerParkBoys.director);
+console.log(`Trailer Park Boys is directed by ${trailerParkBoys.director}`);
