@@ -11,4 +11,5 @@ console.log(animal.indexOf(`p`) === animal.length - 1);
 // ES6
 console.log(animal.endsWith(`p`, animal.length));
 // or
+// or
 console.log(animal.endsWith(`p`));

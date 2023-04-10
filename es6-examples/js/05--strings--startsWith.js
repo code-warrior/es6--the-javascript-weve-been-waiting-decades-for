@@ -11,4 +11,6 @@ console.log(animal.indexOf('s') === 0);
 // ES6
 // or
 console.log(animal.startsWith(`s`));
+// Same as looking for “s” at position 0
 console.log(animal.startsWith(`s`,0));
+// But, this fails, because “s” isn’t found at position, not index, 1

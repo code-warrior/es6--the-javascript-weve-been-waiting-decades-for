@@ -5,6 +5,14 @@ let firstDonor = `Frank`,
     secondDonation = 1;
 
 function thanksForYourDonation(literals, name, donationAmount) {
+    /**
+     * literals is an array consisting of
+     * 0: String before first variable
+     * 1: String between first and second variable
+     * 2: String after last variable
+     * In other words, all the string literals that aren’t variables
+     */
+
     return literals[0] + name + literals[1] + donationAmount + literals[2];
 }
 
