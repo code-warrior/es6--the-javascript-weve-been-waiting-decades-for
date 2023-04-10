@@ -26,4 +26,4 @@ console.log(`Both do a lot of 💩`);
 console.log(`---`);
 
 dogs.setThirdDogName("Bubbles");
-console.log(`If I got a third dog, I’d name it ${dogs.getThirdDogName()}`)
+console.log(`If I got a third dog, I’d name them ${dogs.getThirdDogName()}`)
