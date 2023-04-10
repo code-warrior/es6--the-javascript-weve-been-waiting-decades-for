@@ -1,5 +1,5 @@
 // Strings: Template literals
-let scientificName = 'Tamias';
+let scientificName = `Tamias`;
 
 console.log(`A chipmunk’s scientific name is ${scientificName}.\n-------`);
 
@@ -13,7 +13,7 @@ let albums = [
 console.log(`As of June 2018, the band has put out ${albums.length} albums.\n-------`);
 
 function getMyDogsNames () {
-    return 'Aria and Bela';
+    return `Aria and Bela`;
 }
 
 console.log(`I have two awesome dogs: ${getMyDogsNames()}.`);

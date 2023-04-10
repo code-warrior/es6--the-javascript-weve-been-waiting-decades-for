@@ -13,4 +13,4 @@ function renderArgumentValues(arbitraryParameter, ...restParameters) {
     console.log(`arguments[2] is ${arguments[2]}`);
 }
 
-renderArgumentValues("Call me", "Aloisus", "Devadander", "Abercrombie");
+renderArgumentValues(`Call me`, `Aloisus`, `Devadander`, `Abercrombie`);

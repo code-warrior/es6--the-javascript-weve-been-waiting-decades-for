@@ -9,6 +9,6 @@ console.log('s' === animal[0]);
 console.log(animal.indexOf('s') === 0);
 
 // ES6
-console.log(animal.startsWith("s"));
 // or
-console.log(animal.startsWith("s", 0));
+console.log(animal.startsWith(`s`));
+console.log(animal.startsWith(`s`,0));
