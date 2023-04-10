@@ -1,15 +1,15 @@
 /* Imports and exports must be at the top */
 /* import the function sayMyName from name.js */
-import {sayMyName} from "./js/name.js";
+import {sayMyName} from "./name.js";
 
 /* occupation and moonlighting act as const */
-import {occupation, moonlighting} from "./js/occupation.js";
+import {occupation, moonlighting} from "./occupation.js";
 
 /* Import everything as a namespace import. */
-import * as dogs from "./js/dogs.js";
+import * as dogs from "./dogs.js";
 
 /* Import the renamed function, or */
-import { sayLoudly } from "./js/export-renaming.js";
+import { sayLoudly } from "./export-renaming.js";
 console.log(sayLoudly());
 
 /* Rename the imported function */
