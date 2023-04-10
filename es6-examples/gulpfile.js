@@ -50,4 +50,4 @@ exports.firefox = firefox;
 exports.chrome = chrome;
 exports.opera = opera;
 exports.edge = edge;
-exports.serve = serve;
+exports.default = serve;
